@@ -4,7 +4,7 @@ import telnetlib
 
 HOST = "mi-gh-prt-pe4"
 user = "mauricef"
-password = "2CohecBo"
+password = ""
 
 tn = telnetlib.Telnet(HOST)
 
@@ -15,6 +15,6 @@ if password:
     tn.write(password + "\n")
 
 tn.write("enable\n")
-tn.write("yekThip4\n")
+tn.write("\n")
 
 print tn.read_all()
